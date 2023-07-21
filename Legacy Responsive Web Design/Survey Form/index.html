@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Survey Form</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Survey about social media</h1>
+        <P id="description">Thank you to take the time to complete this survey.
+            We want to know what is your favorite social media is and most useful. </P>
+    </header>
+
+
+    <form id=survey-form>
+        <fieldset>
+            <legend>Personal information</legend>
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+
+            <label id="number-label" for="number">Age</label>
+            <input type="number" name="number" id="number" min="15" max="120" placeholder="Age">
+
+        </fieldset>
+        <div>
+            <p>How much do you know about music?</p>
+            <select name="intrument" id="dropdown" required>
+                <option disabled select value>Select your level</option>
+                <option value="unknow">I only listen music</option>
+                <option value="first">I know something about music</option>
+                <option value="second">I play an instrument but I never study music</option>
+                <option value="thrith">I know theory and play a instrument</option>
+            </select>
+        </div>
+
+        <div>
+            <h2> Would you recommend Pachy Carraasco music?</h2>
+            <label>
+                <input class="radio" name="user-recommend" type="radio" value="definitely" checked>
+                <p>Definitely</p>
+            </label>
+            <label>
+                <input class="radio" name="user-recommend" type="radio" value="Maybe">
+                <p>Maybe</p>
+            </label>
+            <label>
+                <input class="radio" name="user-recommend" type="radio" value="Not sure">
+                <p>Not Sure</p>
+            </label>
+        </div>
+
+        <div>
+            <h2>What was your favorite song of Bossa & Pop album? (You can choose more than one).</h2>
+            <label>
+                <input class="checkbox" type="checkbox" value="Quizas, quizas" name="">
+                <P>Quizas,quizas</P>
+            </label>
+            <label>
+                <input class="checkbox" type="checkbox" value="Just the way you are" name="song-7">
+                <p>Just the way you are</p>
+            </label>
+            <label>
+                <input class="checkbox" type="checkbox" value="Mediteraneo" name="song-8">
+                <p>Mediteraneo</p>
+            </label>
+            <label>
+                <input class="checkbox" type="checkbox" value="Love you like a love song" name="song-1">
+                <p>Love you like a love song</p>
+            </label>
+            <label>
+                <input class="checkbox" type="checkbox" value="O pato" name="song-2">
+                <p>O pato</p>
+            </label>
+            <label>
+                <input class="checkbox" type="checkbox" value="Firework" name="song-3">
+                <p>Firework</p>
+            </label>
+            <label>
+                <input class="checkbox" type="checkbox" value="Madalena" name="song-4">
+                <p>Madalena</p>
+            </label>
+            <label>
+                <input class="checkbox" type="checkbox" value="Poker Face" name="song-5">
+                <p>Poker Face</p>
+            </label>
+            <label>
+                <input class="checkbox" type="checkbox" value="Diamond" name="song-9">
+                <p>Diamond</p>
+            </label>
+            <label>
+                <input class="checkbox" type="checkbox" value="Compadre Pedro Juan" name="song-10">
+                <p>Compadre Pedro Juan</p>
+            </label>
+            <label>
+                <input class="checkbox" type="checkbox" value="O pato" name="All">
+                <p>All</p>
+            </label>
+
+            <textarea placeholder="Feel free to say something"></textarea>
+            <input id="submit" type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

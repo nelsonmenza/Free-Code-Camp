@@ -1,0 +1,53 @@
+body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Main Documentation */
+    #main-doc {
+        margin-left: 300px;
+        /* Space for the navbar on regular-sized devices */
+        padding: 20px;
+    }
+
+    /* Main Sections */
+    .main-section {
+        margin-bottom: 30px;
+    }
+
+    .main-section header {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    /* Navigation Bar */
+    #navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        display: none;
+        /* Hidden on small devices */
+    }
+
+    .nav-link {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
+
+    /* Media Query for Small Devices */
+    @media screen and (max-width: 768px) {
+        #main-doc {
+            margin-left: 0;
+        }
+
+        #navbar {
+            display: block;
+        }
+    }
