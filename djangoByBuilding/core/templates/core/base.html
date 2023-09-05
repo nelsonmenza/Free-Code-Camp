@@ -1,0 +1,53 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% comment %} Import fonts from google {% endcomment %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    {% comment %} Adding CSS file {% endcomment %}
+    <link rel="stylesheet" href="{% static 'core/styles.css' %}" >
+
+    <title>{% block title%}{% endblock  %}|Puddle</title>
+</head>
+<body>
+    <nav>
+        <a href="/" id="home-btn"class="text-nv">Puddle</a>
+
+        <div id="items-nav" class="space-x-6">
+            <a href="#" class="text-nv">New item</a>
+            <a href="#" class="text-nv">Browse</a>
+
+            <a href="#" id="up" class="sign">Sign up</a>
+            <a href="#" id="in" class="sign">Log in</a>
+        </div>
+    </nav>
+    <div class="px-6 py-6">
+        {% block content %}
+        {% endblock %}
+    </div>
+    {% comment %} footer {% endcomment %}
+    <footer class=" px-6 flex justify-between bg-gray-800">
+        <div class="f-about">
+            <h3 class="mb-5 font-semibold text-gray-400" >About:</h3>
+            <p class="text-p text-gray-500" > Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex iusto neque nemo numquam quam mollitia</p>
+        </div>
+        <div class="f-menu">
+            <h3 class="mb-5 font-semibold text-gray-400" >Menu</h3>
+
+            <ul>
+                <li><a href="#" class="f-list text-teal-500 hover:text-teal-700">About</a></li>
+                <li><a href="#" class="f-list text-teal-500 hover:text-teal-700">Contact</a></li>
+                <li><a href="#" class="f-list text-teal-500 hover:text-teal-700">Privacy Policy</a></li>
+                <li><a href="#" class="f-list text-teal-500 hover:text-teal-700">Term of use</a></li>
+
+            </ul>
+        </div> 
+
+    </footer>
+</body>
+</html>
