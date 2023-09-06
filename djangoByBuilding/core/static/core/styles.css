@@ -103,3 +103,31 @@ ul{
 li{
     margin-bottom: 10px;
 }
+
+/* Display block */
+
+#idx-container{
+
+    display:block;
+    margin: 30px;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+}
+.sections{
+    background-color: rgb(243 244 246);
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    /* padding-left: 0,auto; */
+}
+#grid-container{
+    display:flex;
+    column-gap: 50px;
+    margin:0. auto 
+  }
+
+img{
+    width:100px ;
+    height: auto;
+}

@@ -26,7 +26,7 @@
             <a href="#" id="in" class="sign">Log in</a>
         </div>
     </nav>
-    <div class="px-6 py-6">
+    <div id="idx-container">
         {% block content %}
         {% endblock %}
     </div>
@@ -40,10 +40,10 @@
             <h3 class="mb-5 font-semibold text-gray-400" >Menu</h3>
 
             <ul>
-                <li><a href="#" class="f-list text-teal-500 hover:text-teal-700">About</a></li>
-                <li><a href="#" class="f-list text-teal-500 hover:text-teal-700">Contact</a></li>
-                <li><a href="#" class="f-list text-teal-500 hover:text-teal-700">Privacy Policy</a></li>
-                <li><a href="#" class="f-list text-teal-500 hover:text-teal-700">Term of use</a></li>
+                <li><a href="#" class="f-list">About</a></li>
+                <li><a href={% url 'contact' %} class="f-list">Contact</a></li>
+                <li><a href="#" class="f-list">Privacy Policy</a></li>
+                <li><a href="#" class="f-list">Term of use</a></li>
 
             </ul>
         </div> 

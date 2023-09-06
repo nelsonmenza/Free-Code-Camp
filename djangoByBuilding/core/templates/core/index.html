@@ -3,5 +3,47 @@
 {% block title %}Welcome{% endblock %}
 
 {% block content %}
-    <h1>The front page</h1>
+    <div id="nw-item" class="sections" >
+        <h2>Newest items</h2>
+
+        <div id="grid-container">
+            {% for item in items %}
+
+                <div class="grid=item">
+                    <a href="#">
+                        <div >
+                            <img src="{{item.image.url}}" alt="{{item}}" >
+                        </div>
+
+                        <div>
+                            <h2> {{item.name}} </h2>
+                            <p>Price: {{item.price}} </p>
+                        </div>
+                    </a>    
+                </div>
+            {% endfor %}    
+        </div>
+    </div>
+
+    <div id="category" class="sections">
+        <h2>Categories</h2>
+
+        <div id="grid-container">
+            {% for category in categories %}
+
+                <div class="grid=item">
+                    <a href="#">
+
+                        <div>
+                            <h2> {{category.name}} </h2>
+                            <p>{{category.items.count}}items</p>
+                        </div>
+                    </a>    
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+
+    
 {% endblock  %}
