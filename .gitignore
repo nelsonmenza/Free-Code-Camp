@@ -1,2 +1,7 @@
 djangoByBuilding/Pipfile
 djangoByBuilding/Pipfile.lock
+djangoByBuilding/puddle/__pycache__
+djangoByBuilding/items/__pycache__
+djangoByBuilding/core/__pycache__
+djangoByBuilding/items/migrations/__pycache__
+djangoByBuilding/core/migrations/__pycache__

@@ -3,21 +3,21 @@
 {% block title %}Welcome{% endblock %}
 
 {% block content %}
-    <div id="nw-item" class="sections" >
-        <h2>Newest items</h2>
+    <div class="nw-item" >
+        <h2 class="sub-title">Newest items</h2>
 
-        <div id="grid-container">
+        <div class="grid">
             {% for item in items %}
 
-                <div class="grid=item">
-                    <a href="#">
-                        <div >
+                <div class="grid-items">
+                    <a href="{% url 'items:detail' item.id %}" class="s-img">
+                        <div>
                             <img src="{{item.image.url}}" alt="{{item}}" >
                         </div>
 
-                        <div>
-                            <h2> {{item.name}} </h2>
-                            <p>Price: {{item.price}} </p>
+                        <div class="name-p">
+                            <h2 class="subtitle"> {{item.name}} </h2>
+                            <p class="parr">Price: ${{item.price}} </p>
                         </div>
                     </a>    
                 </div>
@@ -25,18 +25,18 @@
         </div>
     </div>
 
-    <div id="category" class="sections">
-        <h2>Categories</h2>
+    <div class="nw-item" class="sections">
+        <h2 class="sub-title">Categories</h2>
 
-        <div id="grid-container">
+        <div class="grid">
             {% for category in categories %}
 
                 <div class="grid=item">
                     <a href="#">
 
-                        <div>
-                            <h2> {{category.name}} </h2>
-                            <p>{{category.items.count}}items</p>
+                        <div class="name-p">
+                            <h2 class="subtitle"> {{category.name}} </h2>
+                            <p class="parr">{{category.items.count}}items</p>
                         </div>
                     </a>    
                 </div>
