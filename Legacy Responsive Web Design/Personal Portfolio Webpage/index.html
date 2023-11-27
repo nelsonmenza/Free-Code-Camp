@@ -1,32 +1,292 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-    <nav id="navbar">
-        <a href="#welcome-section">Welcome</a>
-        <a href="#projects">Projects</a>
-        <a id="profile-link" href="https://github.com/yourusername" target="_blank">GitHub Profile</a>
-    </nav>
-
-    <section id="welcome-section">
-        <h1>Welcome to My Portfolio</h1>
-    </section>
-
-    <section id="projects">
-        <div class="project-tile">
-            <h3>Project 1</h3>
-            <p>Project description goes here...</p>
-            <a href="https://project1url.com" target="_blank">View Project</a>
+<html lang="es">
+  <head>
+    <!-- Metadata -->
+    <meta charset="utf-8">
+    <meta name="author" content="Nelson Mendez">
+    <meta name="description" content="Nelson Mendez's portfolio">
+    <meta name="keywords"
+          content="Python, Django, HTML, CSS, JavaScript, Database">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Title -->body {
+  font-family: "Roboto", sans-serif;
+}
+    <title>Nelson Mendez | Web Developer</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+          crossorigin="anonymous">
+    <!-- Bootstrap Icons-->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Quicksand:wght@500&family=Roboto&display=swap"
+          rel="stylesheet">
+  </head>
+  <body>
+    <!-- nav Bar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbar-toggler"
+                aria-controls="navbarTogglerDemo01"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img src="images/logo.png" width="50" alt="Web page Logo">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about-me">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#project">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact me</a>
+            </li>
+          </ul>
         </div>
-        <!-- Add more project tiles here if needed -->
+      </div>
+    </nav>
+    <!-- Section Hero -->
+    <section class="hero align-items-stretch">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="hero-imagen-desarrollador rounded-circle"
+             src="images/NelsonMendezPhoto.png"
+             alt="Nelson Mendez Photo">
+        <h1>Hi, I'm Nelson Mendez</h1>
+        <h2>I'm a web developer and constantly learning to enhance my skills.</h2>
+      </div>
+      <div class="hero-inferior">
+        <img class="hero-inferior-imagen img-fluid"
+             src="images/hero-inferior.png"
+             alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
+      </div>
     </section>
-</body>
-
+    <!-- About me -->
+    <section id="about-me " class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">Meet Nelson Mendez</h2>
+        <p class="seccion-texto">
+          With a decade entrenched in the industrial pharmaceutical sector, I've progressed from Operator to Team Leader,
+          ultimately specializing as an Electrical Technician, overseeing maintenance, production, and quality control. Recently, I made a switch,
+          following my passion for development. My knack for self-learning, showcased through mastering musical instruments and languages, naturally
+          led me to delve into web development. I began with HTML5 and CSS3 through Free Code Camp, then delved into Python via Harvard CS50P,
+          and further expanded my skills in HTML, CSS, JavaScript, and Django through CS50W. These courses formed the foundation for me to create
+          comprehensive full-stack projects and handle server deployment.
+        </p>
+      </div>
+    </section>
+    <!-- Experience -->
+    <section class="experiencia seccion-clara">
+      <div class="container text-center">
+        <div class="row">
+          <!-- Backend -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Backend</p>
+            <p>
+              The backend is my favorite stack, and in the near future, it will be my specialization area. Up to now,
+              I've learned Python, Django as a framework, and used an ORM with various relational databases like SQLite3, Postgres, and MySQL.
+            </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Python</span>
+              <span class="badge text-bg-primary">Django</span>
+              <span class="badge text-bg-primary">Relational Database</span>
+              <!-- <span class="badge text-bg-primary">API</span> -->
+              <!-- <span class="badge text-bg-primary">React</span> -->
+            </div>
+          </div>
+          <!-- Frontend -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Frontend</p>
+            <p>
+              I've already learned different technologies for the frontend, such as HTML and CSS, to create and style basic web pages,
+              and Bootstrap to assist in creating responsive web pages. Currently, I'm learning JavaScript for DOM manipulation and to connect the frontend with the backend.
+            </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-primary">Bootstrap</span>
+              <span class="badge text-bg-primary">JavaScript</span>
+            </div>
+          </div>
+          <!-- Journey -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Journey</p>
+            <p>
+              where I acquired proficiency in the aforementioned technologies, including Git and Linux.
+              These resources have been pivotal in my continuous learning and understanding of web development.
+            </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Harvard</span>
+              <span class="badge text-bg-primary">IBM</span>
+              <span class="badge text-bg-primary">Cisco</span>
+              <span class="badge text-bg-primary">Microsoft</span>
+              <span class="badge text-bg-primary">Free Code Camp</span>
+              <span class="badge text-bg-primary">Odin Project</span>
+              <span class="badge text-bg-primary">Hola Mundo Academy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects -->
+    <section id="project"
+             class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">My recent projects</h2>
+      <h3 class="seccion-descripcion">Here are some of the different recent projects...</h3>
+      <!-- Project Gallery -->
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+          <!-- Project 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="images/proyecto1.png" alt="CS50W projects">
+              <div class="overlay">
+                <p>CS50W Projects</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/nelsonmenza/CS50W"
+                     target="_blank"
+                     rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://youtube.com/playlist?list=PLLD84dZFD85uKQIpXT_L9aKppXGOxeKIy&si=_L4apRV75ceXr91u"
+                     target="_blank"
+                     rel="noopener noreferrer">
+                    <i class="bi bi-play-btn"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="images/proyecto2.png" alt="CS50P Final Project">
+              <div class="overlay">
+                <p>CS50P Final Project</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/nelsonmenza/CS50P/tree/main/Final%20Project"
+                     target="_blank"
+                     rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://youtu.be/CVQUEg5Jx3s?si=r4su6_00dtfrEEUy"
+                     target="_blank"
+                     rel="noopener noreferrer">
+                    <i class="bi bi-play-btn"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="images/proyecto3.png" alt="Projects CS50P">
+              <div class="overlay">
+                <p>CS50P Projects</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/nelsonmenza/CS50P"
+                     target="_blank"
+                     rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 4 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="images/proyecto4.png" alt="Cisco Python essential">
+              <div class="overlay">
+                <p>Cisco Python essential</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/nelsonmenza/Cisco-Networking-Academy"
+                     target="_blank"
+                     rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/nelsonmenza"
+           target="_blank"
+           rel="noopener noreferrer">
+          <button type="button" class="btn btn-info">
+            More projects
+            <i class="bi bi-arrow-right-circle-fill"></i>
+          </button>
+        </a>
+      </div>
+    </section>
+    <!-- Contacto -->
+    <section id="contact" class="contacto seccion-oscura">
+      <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">Let's talk!</div>
+            <div class="col-12 col-md-4 descripcion">Contact me if you're interested in working together.</div>
+            <div class="col-12 col-md-4">
+              <a href="nelsonmenza30@gmail.com">
+                <button type="button">
+                  Contact me
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Pie de pagina (footer) -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+      <img class="footer-logo" src="images/logo.png" alt="Logo del portafolio">
+      <p class="footer-texto text-center">
+        Every day, I learn and create.
+        <br>
+        Let's build a project together.
+      </p>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="https://github.com/nelsonmenza"
+           target="_blank"
+           rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/nelsonmenza"
+           target="_blank"
+           rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="nelsonmenza30@gmail.com"
+           target="_blank"
+           rel="noopener noreferrer">
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+      <div class="copyright">Built by Nelson Mendez (2023) &#169;</div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
+  </body>
 </html>
